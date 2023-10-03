@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: EFCA08 EFCA08;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="510.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="137.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="466.0" minWidth="10.0" prefWidth="463.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.60001220703125" minHeight="10.0" prefHeight="26.19998779296875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="64.60001220703126" minHeight="10.0" prefHeight="27.999981689453115" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.20001831054688" minHeight="10.0" prefHeight="45.199993896484365" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.19998779296876" minHeight="10.0" prefHeight="27.39997558593751" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="105.00000610351563" minHeight="10.0" prefHeight="66.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="99.20003356933594" minHeight="10.0" prefHeight="70.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.19998779296873" minHeight="10.0" prefHeight="56.800018310546875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.39999999999998" minHeight="10.0" prefHeight="38.60002441406249" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pencil Tool- Click or click and drag to draw tiles of the level the slider is currently on." GridPane.columnIndex="1" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/Edit.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Icons/Erase.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@Icons/dig.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@Icons/fill.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@Icons/icons8-select-24%20copy.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Terrain Tool" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pointy" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Level Picker" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eraser Tool- Click or click and drag to erase/ delete tiles." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dig Tool- Left-click to dig (move a tile down one level) and right-click to build (move a tile up one level)." wrappingWidth="454.3885803222656" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fill Tool- Click to fill an area with the currently selected level." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Selection Tool- Click to select a tile or click and drag to select the desired tiles. Click and drag a selected tile and release where you wish to move the selected tiles. Click a selected tile to deselect all tiles." wrappingWidth="458.8812561035156" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Terrain Tool- Choose from the list and click on the board to create large-scale terrain objects. Select blocks and click “Custom…” to make those tiles into terrain objects you can use." wrappingWidth="454.2850036621094" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pointy Tool- Left-click to make a tile have a pyramid top. Right-click to remove the pyramid top." wrappingWidth="444.1839599609375" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Level Picker Tool- Click on a tile to make the current level you’re working on the same as the tile you clicked on. Works similarly to a color picker." wrappingWidth="443.3386535644531" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </GridPane>
+   </children>
+</VBox>
